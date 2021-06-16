@@ -11,31 +11,29 @@ import WrongTurn from "./components/WrongTurn";
 
 import { FaBeer, FaItunesNote } from "react-icons/fa";
 
-class Question extends React.Component {
-  render() {
-    return <h3> Lets go for a ? </h3>;
-  }
-}
 function App() {
   return (
     <Router>
-      <Menu />
-      in process – have a <FaBeer /> while you are waiting <FaItunesNote />{" "}
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/projects" component={() => <Projects data={Data} />} />
-        <Route
-          path="/products/:id"
-          component={({ match }) => (
-            <ProjectReadMe data={Data} id={match.params.id} />
-          )}
-        />
-        <Route path="/about" component={AboutMe} />
-
-        <Route path={() => "/main" || "/admin" || "/any-other-word"}>
-          <WrongTurn />
-        </Route>
-      </Switch>
+      <header>
+        <Menu />
+      </header>
+      <div className="main">
+        <Switch>
+          <Route path="/" exact component={Home} />{" "}
+          <Route path="/about" component={AboutMe} />
+          <Route path="/projects" component={() => <Projects data={Data} />} />
+          <Route
+            path="/products/:id"
+            component={({ match }) => (
+              <ProjectReadMe data={Data} id={match.params.id} />
+            )}
+          />
+          <Route path="/contact" component={Contact} />
+          <Route path={() => "/main" || "/admin" || "/any-other-word"}>
+            <WrongTurn />
+          </Route>
+        </Switch>
+      </div>
     </Router>
   );
 }
