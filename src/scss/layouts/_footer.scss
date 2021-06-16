@@ -1,0 +1,16 @@
+footer {
+  @include flex-box;
+  flex-direction: row;
+  margin: 3rem auto 2rem auto;
+}
+.footer {
+  @include flex-box;
+  flex-direction: column;
+
+  a {
+    font-size: 1.2rem;
+  }
+  .beating {
+    animation: beatingHeart 2s infinite;
+  }
+}

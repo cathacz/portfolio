@@ -4,9 +4,9 @@ const Menu = () => {
   return (
     <nav>
       <ul>
-        <Link to="/">
+        {/* <Link to="/">
           <li>Home</li>
-        </Link>{" "}
+        </Link>{" "} */}
         <Link to="/about">
           <li>About Me</li>
         </Link>

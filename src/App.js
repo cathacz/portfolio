@@ -8,8 +8,10 @@ import Projects from "./components/Projects";
 import ProjectReadMe from "./components/ProjectReadMe";
 import Contact from "./components/Contact";
 import WrongTurn from "./components/WrongTurn";
+import Footer from "./components/Footer";
+import Imprint from "./components/Imprint";
 
-import { FaBeer, FaItunesNote } from "react-icons/fa";
+import { FaBeer, FaItunesNote, GiMailbox } from "react-icons/fa";
 
 function App() {
   return (
@@ -17,7 +19,7 @@ function App() {
       <header>
         <Menu />
       </header>
-      <div className="main">
+      <main>
         <Switch>
           <Route path="/" exact component={Home} />{" "}
           <Route path="/about" component={AboutMe} />
@@ -29,11 +31,15 @@ function App() {
             )}
           />
           <Route path="/contact" component={Contact} />
+          <Route path="/imprint" component={Imprint} />
           <Route path={() => "/main" || "/admin" || "/any-other-word"}>
             <WrongTurn />
           </Route>
         </Switch>
-      </div>
+      </main>
+      <footer>
+        <Footer />
+      </footer>
     </Router>
   );
 }

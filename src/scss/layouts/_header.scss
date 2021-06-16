@@ -1,20 +1,29 @@
 header {
   @include flex-box;
   height: 15vw;
-  background: $sg3;
 }
 nav {
   width: 60vw;
   padding: 2rem;
-  @include flex-box;
-  justify-content: space-evenly;
-  text-decoration: none;
-  background: $sg2;
+
   ul {
-    text-decoration: none;
+    @include flex-box;
+    flex-direction: row;
+    justify-content: space-evenly;
+
     li {
       list-style: none;
       text-decoration: none;
+      &:hover {
+        transform: scale(2);
+      }
     }
+  }
+}
+a {
+  text-decoration: none;
+  color: black;
+  &:visited {
+    opacity: 50%;
   }
 }
