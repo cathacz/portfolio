@@ -7,7 +7,7 @@ const Imprint = () => {
       <div className="row">
         {" "}
         <p>I am not a&nbsp;</p>
-        <span className="cookie">
+        <span>
           <FaCookieBite />
         </span>
         <p> &nbsp;monster!</p>

@@ -7,7 +7,6 @@ const Footer = () => {
       <h6>Made with my blood, sweat & tears </h6>
       <Link to="/imprint">
         <h5>Imprint</h5>
-        {/* <li>About Me</li> */}
       </Link>
       <br></br>
       <a

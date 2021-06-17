@@ -20,6 +20,35 @@ h6 {
   flex-direction: column;
   width: 50vw;
 }
+.skills {
+  @include flex-box;
+  flex-direction: column;
+  p {
+    @include flex-box;
+    flex-direction: row;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    .tooltip {
+      border: lightcoral dotted 2px;
+      position: relative;
+      display: inline-block;
+    }
+    .tooltip .tTtext {
+      visibility: hidden;
+      width: 120px;
+      background-color: black;
+      color: lightcoral;
+      text-align: center;
+      padding: 5px 0;
+      border-radius: 6px;
+      position: absolute;
+      z-index: 1;
+    }
+    .tooltip:hover .tTtext {
+      visibility: visible;
+    }
+  }
+}
 
 .imprint {
   @include flex-box;
@@ -30,9 +59,6 @@ h6 {
   }
   span {
     font-size: 1.6rem;
+    animation: cookie 4s infinite;
   }
-}
-
-.cookie {
-  animation: cookie 4s infinite;
 }

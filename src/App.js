@@ -4,6 +4,7 @@ import Data from "./data.json";
 import Menu from "./components/Menu";
 import Home from "./components/Home";
 import AboutMe from "./components/AboutMe";
+import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import ProjectReadMe from "./components/ProjectReadMe";
 import Contact from "./components/Contact";
@@ -23,6 +24,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={Home} />{" "}
           <Route path="/about" component={AboutMe} />
+          <Route path="/skills" component={Skills} />
           <Route path="/projects" component={() => <Projects data={Data} />} />
           <Route
             path="/products/:id"
