@@ -21,23 +21,29 @@ function App() {
         <Menu />
       </header>
       <main>
-        <Switch>
-          <Route path="/" exact component={Home} />{" "}
-          <Route path="/about" component={AboutMe} />
-          <Route path="/skills" component={Skills} />
-          <Route path="/projects" component={() => <Projects data={Data} />} />
-          <Route
-            path="/products/:id"
-            component={({ match }) => (
-              <ProjectReadMe data={Data} id={match.params.id} />
-            )}
-          />
-          <Route path="/contact" component={Contact} />
-          <Route path="/imprint" component={Imprint} />
-          <Route path={() => "/main" || "/admin" || "/any-other-word"}>
-            <WrongTurn />
-          </Route>
-        </Switch>
+        <div className="main">
+          {" "}
+          <Switch>
+            <Route path="/" exact component={Home} />{" "}
+            <Route path="/about" component={AboutMe} />
+            <Route path="/skills" component={Skills} />
+            <Route
+              path="/projects"
+              component={() => <Projects data={Data} />}
+            />
+            <Route
+              path="/products/:id"
+              component={({ match }) => (
+                <ProjectReadMe data={Data} id={match.params.id} />
+              )}
+            />
+            <Route path="/contact" component={Contact} />
+            <Route path="/imprint" component={Imprint} />
+            <Route path={() => "/main" || "/admin" || "/any-other-word"}>
+              <WrongTurn />
+            </Route>
+          </Switch>
+        </div>
       </main>
       <footer>
         <Footer />

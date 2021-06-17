@@ -6,12 +6,13 @@ const Imprint = () => {
       <h2>Imprint</h2>
       <div className="row">
         {" "}
-        <p>I am not a&nbsp;</p>
+        <p>I am a&nbsp;</p>
         <span>
           <FaCookieBite />
         </span>
-        <p> &nbsp;monster!</p>
-      </div>
+        <p> &nbsp;monster! </p>
+      </div>{" "}
+      <h6>... and I don't share ...</h6>
     </div>
   );
 };

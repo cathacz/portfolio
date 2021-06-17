@@ -4,6 +4,12 @@ h1 {
 h2 {
   font-size: 1.4rem;
   margin: 1rem;
+  letter-spacing: 0.05rem;
+}
+h3 {
+  font-size: 1.1rem;
+  margin: 1rem;
+  letter-spacing: 0.02rem;
 }
 h5 {
   font-size: 0.9rem;
@@ -13,49 +19,48 @@ h6 {
   opacity: 50%;
 }
 .main {
-  // width: 50vw;
+  width: 100vw;
+  @include flex-box;
 }
 .about {
-  @include flex-box;
-  flex-direction: column;
+  @include flex-column;
+
   width: 50vw;
 }
 .skills {
-  @include flex-box;
-  flex-direction: column;
+  @include flex-column;
+
   p {
-    @include flex-box;
-    flex-direction: row;
+    @include flex-row;
     font-size: 2rem;
     margin-bottom: 0.5rem;
-    .tooltip {
-      border: lightcoral dotted 2px;
+    // >>>>> TOOLTIP <<<<<
+    .toolTip {
       position: relative;
       display: inline-block;
+      margin: 1rem;
     }
-    .tooltip .tTtext {
+    .toolTip .tTtext {
       visibility: hidden;
-      width: 120px;
-      background-color: black;
+      font-size: 1.2rem;
+      height: 2rem;
+      background-color: white;
       color: lightcoral;
       text-align: center;
-      padding: 5px 0;
-      border-radius: 6px;
       position: absolute;
       z-index: 1;
     }
-    .tooltip:hover .tTtext {
+    .toolTip:hover .tTtext {
+      padding: 0.7rem;
       visibility: visible;
     }
   }
 }
 
 .imprint {
-  @include flex-box;
-  flex-direction: column;
+  @include flex-column;
   .row {
-    @include flex-box;
-    flex-direction: row;
+    @include flex-row;
   }
   span {
     font-size: 1.6rem;

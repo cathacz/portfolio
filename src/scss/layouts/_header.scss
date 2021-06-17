@@ -7,14 +7,15 @@ nav {
   padding: 2rem;
 
   ul {
-    @include flex-box;
-    flex-direction: row;
+    @include flex-row;
+
     justify-content: space-evenly;
 
     li {
       list-style: none;
       text-decoration: none;
       &:hover {
+        background-color: white;
         transform: scale(2);
       }
     }

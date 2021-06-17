@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Skills from "./Skills";
+
 const AboutMe = () => {
   return (
     <React.Fragment>
@@ -17,7 +17,7 @@ const AboutMe = () => {
           dolorem, enim, deleniti distinctio porro tempore ipsam debitis
           recusandae totam vitae. Libero, iusto.
         </p>
-        <h5>Wanna know more about me?</h5>
+        <h3>Wanna know more about me?</h3>
         {/* <Route path="/skills" component={Skills} /> */}
         <Link to="/skills">
           <li>Skills</li>

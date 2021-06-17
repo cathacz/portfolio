@@ -7,6 +7,18 @@
   justify-content: center;
   align-items: center;
 }
+@mixin flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+@mixin flex-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
 @mixin Heart {
   animation: beatingHeart;
@@ -20,6 +32,31 @@
   }
   100% {
     transform: scale(0.8);
+  }
+}
+@mixin HardBeat {
+  animation: hardBeat;
+}
+@keyframes hardBeat {
+  0% {
+    transform: scale(0.8);
+    color: black;
+  }
+  25% {
+    transform: scale(2);
+    color: lightcoral;
+  }
+  50% {
+    transform: scale(0.8);
+    color: black;
+  }
+  75% {
+    transform: scale(2);
+    color: lightcoral;
+  }
+  100% {
+    transform: scale(0.8);
+    color: black;
   }
 }
 

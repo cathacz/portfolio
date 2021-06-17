@@ -14,5 +14,10 @@ footer {
   }
   .beating {
     animation: beatingHeart 2s infinite;
+    &:hover {
+      // color: lightcoral;
+
+      animation: hardBeat 2s infinite;
+    }
   }
 }

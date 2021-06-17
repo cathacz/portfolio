@@ -10,35 +10,61 @@ import {
   SiGithub,
   SiGit,
 } from "react-icons/si";
+
 const Skills = () => {
   return (
     <React.Fragment>
       <div className="skills">
         {" "}
         <h2>Skills</h2>
+        <h3>most wanted</h3>
         <p>
           <div className="toolTip">
             <SiJavascript />
             <span className="tTtext">JavaScript</span>
           </div>
           &nbsp;
-          <SiReact />
+          <div className="toolTip">
+            <SiReact />
+            <span className="tTtext">React</span>
+          </div>
           &nbsp;
-          <SiSass />
+          <div className="toolTip">
+            <SiSass />
+            <span className="tTtext">Sass</span>
+          </div>
         </p>
         <p>
-          {" "}
-          <IoTerminal /> &nbsp;
-          <SiGit />
+          <div className="toolTip">
+            <IoTerminal />
+            <span className="tTtext">Terminal</span>
+          </div>
           &nbsp;
-          <SiGithub />
+          <div className="toolTip">
+            <SiGit />
+            <span className="tTtext">Git</span>
+          </div>
+          &nbsp;
+          <div className="toolTip">
+            <SiGithub />
+            <span className="tTtext">Github</span>
+          </div>
         </p>
         <p>
-          <SiAdobeindesign />
+          <div className="toolTip">
+            <SiAdobeindesign />
+            <span className="tTtext">Adobe InDesign</span>
+          </div>
           &nbsp;
-          <SiAdobephotoshop />
+          <div className="toolTip">
+            <SiAdobephotoshop />
+            <span className="tTtext">Adobe Photoshop</span>
+          </div>
           &nbsp;
-          <SiAdobeillustrator />
+          <div className="toolTip">
+            <SiAdobeillustrator />
+            <span className="tTtext">Adobe Illustrator</span>
+          </div>
         </p>
       </div>
     </React.Fragment>
