@@ -66,6 +66,7 @@ const Skills = () => {
             <span className="tTtext">Adobe Illustrator</span>
           </div>
         </p>
+        <h3>not enough?</h3>
       </div>
     </React.Fragment>
   );
