@@ -1,7 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+// import Skills from "./Skills";
 
 const AboutMe = () => {
+  function openSkills(e) {
+    return <p>Pensi</p>;
+  }
+
   return (
     <React.Fragment>
       {" "}

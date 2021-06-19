@@ -32,7 +32,7 @@ function App() {
               component={() => <Projects data={Data} />}
             />
             <Route
-              path="/products/:id"
+              path="/projects/:id"
               component={({ match }) => (
                 <ProjectReadMe data={Data} id={match.params.id} />
               )}
