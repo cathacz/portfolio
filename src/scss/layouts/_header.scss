@@ -1,6 +1,9 @@
 header {
   @include flex-box;
   height: 15vw;
+  position: sticky;
+  top: 0;
+  background: white;
 }
 nav {
   width: 60vw;

@@ -3,10 +3,9 @@ import { Link } from "react-router-dom";
 const Menu = () => {
   return (
     <nav>
-      {" "}
-      <Link to="/">
+      {/* <Link to="/">
         <li>C</li>
-      </Link>
+      </Link> */}
       <ul>
         <Link to="/about">
           <li>About Me</li>

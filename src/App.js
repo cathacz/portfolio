@@ -24,6 +24,7 @@ function App() {
         <div className="main">
           <Switch>
             <Route path="/" exact component={Home} />
+            <Route path="/portfolio" component={Home} />
             <Route path="/about" component={AboutMe} />
             <Route path="/skills" component={Skills} />
             <Route

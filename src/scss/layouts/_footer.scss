@@ -1,13 +1,13 @@
 footer {
   @include flex-box;
   position: sticky;
-  bottom: 0.5rem;
-  width: 100vw;
-  margin: 3rem auto 2rem auto;
+  bottom: 0rem;
+  padding-bottom: 0.5rem;
+  margin: 2rem auto;
+  background-color: white;
 }
 .footer {
-  @include flex-box;
-  flex-direction: column;
+  @include flex-column;
 
   a {
     font-size: 1.2rem;
@@ -15,8 +15,6 @@ footer {
   .beating {
     animation: beatingHeart 2s infinite;
     &:hover {
-      // color: lightcoral;
-
       animation: hardBeat 2s infinite;
     }
   }

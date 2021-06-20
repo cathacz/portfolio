@@ -1,3 +1,10 @@
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
 h1 {
   font-size: 1.8rem;
 }
@@ -19,7 +26,6 @@ h6 {
   opacity: 50%;
 }
 .main {
-  width: 100vw;
   @include flex-box;
 }
 .about {
@@ -70,8 +76,9 @@ h6 {
 .project {
   @include flex-row;
   margin: 2rem;
+  overflow-y: hidden;
   img {
-    width: 30vw;
+    width: 15vw;
   }
   .leftSide {
     margin: 2rem;
