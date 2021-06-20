@@ -22,9 +22,8 @@ function App() {
       </header>
       <main>
         <div className="main">
-          {" "}
           <Switch>
-            <Route path="/" exact component={Home} />{" "}
+            <Route path="/" exact component={Home} />
             <Route path="/about" component={AboutMe} />
             <Route path="/skills" component={Skills} />
             <Route

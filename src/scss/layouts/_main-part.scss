@@ -67,3 +67,13 @@ h6 {
     animation: cookie 4s infinite;
   }
 }
+.project {
+  @include flex-row;
+  margin: 2rem;
+  img {
+    width: 30vw;
+  }
+  .leftSide {
+    margin: 2rem;
+  }
+}

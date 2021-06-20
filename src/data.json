@@ -3,33 +3,41 @@
     "id": 0,
     "title": "Pug Love",
     "text": "some short introduction",
-    "language": ["bootstrap"],
+    "language": ["SiBootstrap"],
     "link": "https://cathacz.github.io/bootstrapTryOut/",
-    "img": "../public/img/pugLove.png"
+    "img": "./img/pugLove.png",
+    "alt": "Project Layout",
+    "buttonText": "See for yourself"
   },
   {
     "id": 1,
     "title": "Tic Tac Toe",
     "text": "some short introduction",
-    "language": ["JavaScript", "CSS", "HTML"],
+    "language": ["SiJavaScript", "SiCss3", "SiHtml5"],
     "link": "https://cathacz.github.io/letsPlayAGame/",
-    "img": "../public/img/ticTacToe.png"
+    "img": "./img/ticTacToe.png",
+    "alt": "Project Layout",
+    "buttonText": "Play A game"
   },
   {
     "id": 2,
     "title": "Stay Focused",
     "text": "some short introduction",
-    "language": ["JavaScript", "Sass", "HTML"],
+    "language": ["SiJavaScript", "SiSass", "SiHtml5"],
     "link": "https://cathacz.github.io/stayFocused/",
-    "img": "../public/img/stayFocused.png"
+    "img": "./img/stayFocused.png",
+    "alt": "Project Layout",
+    "buttonText": "Check it out"
   },
 
   {
     "id": 3,
     "title": "Get your $hit done",
     "text": "some short introduction",
-    "language": ["React", "Sass"],
-    "link": "cathacz.github.io/getyourshitdone/",
-    "img": "../public/img/stayFocused.png"
+    "language": ["SiReact", "SiSass"],
+    "link": "https://cathacz.github.io/getyourshitdone/",
+    "img": "./img/getYourShitDone.png",
+    "alt": "Project Layout",
+    "buttonText": "Wanna try?"
   }
 ]
