@@ -2,42 +2,46 @@
   {
     "id": 0,
     "title": "Pug Love",
-    "text": "some short introduction",
+    "text": "To try out Bootstrap, I built a simple Layout featuring the cutes pugs.",
     "language": ["SiBootstrap"],
     "link": "https://cathacz.github.io/bootstrapTryOut/",
     "img": "./img/pugLove.png",
     "alt": "Project Layout",
-    "buttonText": "See for yourself"
+    "buttonText": "See for yourself",
+    "READMElink": "https://github.com/cathacz/bootstrapTryOut/blob/main/README.md"
   },
   {
     "id": 1,
     "title": "Tic Tac Toe",
-    "text": "some short introduction",
+    "text": "Wanna goof off and play a quick round Tic Tac Toe?",
     "language": ["SiJavaScript", "SiCss3", "SiHtml5"],
     "link": "https://cathacz.github.io/letsPlayAGame/",
     "img": "./img/ticTacToe.png",
     "alt": "Project Layout",
-    "buttonText": "Play A game"
+    "buttonText": "I wanna play",
+    "READMElink": "https://github.com/cathacz/letsPlayAGame/blob/main/README.md"
   },
   {
     "id": 2,
     "title": "Stay Focused",
-    "text": "some short introduction",
+    "text": "This is actually a group project. Don't forget to check out the other Contributors!",
     "language": ["SiJavaScript", "SiSass", "SiHtml5"],
     "link": "https://cathacz.github.io/stayFocused/",
     "img": "./img/stayFocused.png",
     "alt": "Project Layout",
-    "buttonText": "Check it out"
+    "buttonText": "See project",
+    "READMElink": "https://github.com/cathacz/stayFocused/blob/main/README.md"
   },
 
   {
     "id": 3,
     "title": "Get your $hit done",
-    "text": "some short introduction",
+    "text": "A quick To-Do-List App. Nothing fancy so far and I swear someday I will write a better text here.",
     "language": ["SiReact", "SiSass"],
     "link": "https://cathacz.github.io/getyourshitdone/",
     "img": "./img/getYourShitDone.png",
     "alt": "Project Layout",
-    "buttonText": "Wanna try?"
+    "buttonText": "Wanna try?",
+    "READMElink": "https://github.com/cathacz/getYourShitDone/blob/main/README.md"
   }
 ]

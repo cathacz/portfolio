@@ -1,0 +1,12 @@
+button {
+  border: none;
+  //   text-decoration: underline;
+  background-color: white;
+  padding: 0.5rem;
+  margin: 0.4rem;
+  &:hover {
+    background-color: white;
+    transform: scale(1.4);
+    cursor: pointer;
+  }
+}

@@ -13,21 +13,40 @@ import {
 
 const Projects = ({ data }) => {
   const items = data.map((item) => {
-    const { id, title, text, language, img, alt, link, buttonText } = item;
+    const {
+      id,
+      title,
+      text,
+      language,
+      img,
+      alt,
+      link,
+      buttonText,
+      READMElink,
+    } = item;
     return (
       <li key={id} className="project">
         <Link to={`/products/${id}`} />
         <div>
+          {/* POP-UP Window if needed */}
+          {/* <a
+            target="popup"
+            onclick="window.open
+  ('', 'popup', 'width=580,height=360,scrollbars=no, toolbar=no,status=no,resizable=yes,menubar=no,location=no,directories=no,top=10,left=10')"
+            href={`${process.env.PUBLIC_URL}/${img}`}
+          >
+            <img src={`${process.env.PUBLIC_URL}/${img}`} alt={alt} />
+          </a> */}
+
           <img src={`${process.env.PUBLIC_URL}/${img}`} alt={alt} />
-          {/* data[0].png */}
         </div>
         <div className="leftSide">
           <h2>{title}</h2>
           <h3>{text}</h3>
           <p>
-            {language.map((lang, i) => (
+            {/* {language.map((lang, i) => (
               <i key={i}>{lang}&nbsp;</i>
-            ))}
+            ))} */}
             {/* <div className="toolTip">
               <{language} />
 
@@ -37,6 +56,11 @@ const Projects = ({ data }) => {
           <button>
             <a target="blank" href={link}>
               {buttonText}
+            </a>
+          </button>
+          <button>
+            <a target="blank" href={READMElink}>
+              READMore
             </a>
           </button>
         </div>
