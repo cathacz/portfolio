@@ -1,14 +1,15 @@
 footer {
   @include flex-box;
-  flex: 1;
+  position: fixed;
+  bottom: 0rem;
+  padding: 0.6rem 0 0.8rem 0;
+  margin-top: 5rem;
+  background-color: white;
+  width: 100vw;
 }
 .footer {
   @include flex-column;
-  position: relative;
-  bottom: 0rem;
-  padding-bottom: 0.5rem;
-  margin: 5rem auto;
-  background-color: white;
+
   a {
     font-size: 1.2rem;
   }

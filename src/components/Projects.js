@@ -37,8 +37,10 @@ const Projects = ({ data }) => {
           >
             <img src={`${process.env.PUBLIC_URL}/${img}`} alt={alt} />
           </a> */}
-
-          <img src={`${process.env.PUBLIC_URL}/${img}`} alt={alt} />
+          <a href={link} target="blank">
+            {" "}
+            <img src={`${process.env.PUBLIC_URL}/${img}`} alt={alt} />
+          </a>
         </div>
         <div className="leftSide">
           <h2>{title}</h2>

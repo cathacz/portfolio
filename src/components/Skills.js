@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { IoTerminal } from "react-icons/io5";
 import {
   SiAdobeindesign,
@@ -67,6 +68,9 @@ const Skills = () => {
           </div>
         </p>
         <h3>not skilled enough?</h3>
+        <Link to="/moreskills">
+          <li> more Skills</li>
+        </Link>
       </div>
     </React.Fragment>
   );

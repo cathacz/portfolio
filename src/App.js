@@ -5,14 +5,13 @@ import Menu from "./components/Menu";
 import Home from "./components/Home";
 import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
+import MoreSkills from "./components/MoreSkills";
 import Projects from "./components/Projects";
 import ProjectReadMe from "./components/ProjectReadMe";
 import Contact from "./components/Contact";
 import WrongTurn from "./components/WrongTurn";
 import Footer from "./components/Footer";
 import Imprint from "./components/Imprint";
-
-import { FaBeer, FaItunesNote, GiMailbox } from "react-icons/fa";
 
 function App() {
   return (
@@ -27,6 +26,7 @@ function App() {
             <Route path="/portfolio" component={Home} />
             <Route path="/about" component={AboutMe} />
             <Route path="/skills" component={Skills} />
+            <Route path="/moreskills" component={MoreSkills} />
             <Route
               path="/projects"
               component={() => <Projects data={Data} />}
