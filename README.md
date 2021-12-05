@@ -1,1 +1,3 @@
-# portfolio
+# This is my Portfolio
+
+Guess what – it's not ready yet! Well actually since I made this, I learned a lot of new Skills, so to be exact: it is not up to date. Sarcasm Level will stay the same...
